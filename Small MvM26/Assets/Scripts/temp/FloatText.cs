@@ -1,24 +1,27 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-public class FloatText : MonoBehaviour
+namespace SmallGame
 {
-    [SerializeField] float floatSpeed = 2f;
-    [SerializeField] float floatAmplitude = 5f;
 
-    private RectTransform rectTransform;
-    private Vector3 originalPosition;
-
-    void Start()
+    public class FloatText : MonoBehaviour
     {
-        rectTransform = GetComponent<RectTransform>();
-        originalPosition = rectTransform.anchoredPosition;
+        [SerializeField] float _floatSpeed = 2f;
+        [SerializeField] float _floatAmplitude = 5f;
+
+        RectTransform _rectTransform;
+        Vector3 _originalPosition;
+
+        void Start()
+        {
+            _rectTransform = GetComponent<RectTransform>();
+            _originalPosition = _rectTransform.anchoredPosition;
+        }
+
+        void Update()
+        {
+            float newY = _originalPosition.y + Mathf.Sin(Time.time * _floatSpeed) * _floatAmplitude;
+            _rectTransform.anchoredPosition = new Vector3(_originalPosition.x, newY, _originalPosition.z);
+        }
     }
 
-    void Update()
-    {
-        // Calculate the new Y position with a sin wave for floating effect
-        float newY = originalPosition.y + Mathf.Sin(Time.time * floatSpeed) * floatAmplitude;
-        rectTransform.anchoredPosition = new Vector3(originalPosition.x, newY, originalPosition.z);
-    }
 }
