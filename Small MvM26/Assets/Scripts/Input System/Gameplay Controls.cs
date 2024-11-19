@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-namespace SmallGame.Controls
+namespace SmallGame.Input
 {
     public partial class @GameplayControls: IInputActionCollection2, IDisposable
     {
@@ -55,6 +55,15 @@ namespace SmallGame.Controls
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""dash"",
+                    ""type"": ""Button"",
+                    ""id"": ""67ee16f7-1312-4bd6-bffa-f5eba9203387"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -214,12 +223,56 @@ namespace SmallGame.Controls
                 },
                 {
                     ""name"": """",
+                    ""id"": ""dfbb6386-9471-434e-943f-1c2620f2fc9d"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""2b3901b7-2588-4165-bf40-799eb79a31a4"",
                     ""path"": ""<Keyboard>/x"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""da5ad4bc-bf62-485f-a8ff-1a6ee3a94135"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3bfc6cbd-208d-42ce-82cb-efb5ea4a692e"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2289f0b4-55bd-491b-ad19-3b32bdac05d1"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -233,6 +286,7 @@ namespace SmallGame.Controls
             m_main_movement = m_main.FindAction("movement", throwIfNotFound: true);
             m_main_jump = m_main.FindAction("jump", throwIfNotFound: true);
             m_main_attack = m_main.FindAction("attack", throwIfNotFound: true);
+            m_main_dash = m_main.FindAction("dash", throwIfNotFound: true);
         }
 
         ~@GameplayControls()
@@ -302,6 +356,7 @@ namespace SmallGame.Controls
         private readonly InputAction m_main_movement;
         private readonly InputAction m_main_jump;
         private readonly InputAction m_main_attack;
+        private readonly InputAction m_main_dash;
         public struct MainActions
         {
             private @GameplayControls m_Wrapper;
@@ -309,6 +364,7 @@ namespace SmallGame.Controls
             public InputAction @movement => m_Wrapper.m_main_movement;
             public InputAction @jump => m_Wrapper.m_main_jump;
             public InputAction @attack => m_Wrapper.m_main_attack;
+            public InputAction @dash => m_Wrapper.m_main_dash;
             public InputActionMap Get() { return m_Wrapper.m_main; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -327,6 +383,9 @@ namespace SmallGame.Controls
                 @attack.started += instance.OnAttack;
                 @attack.performed += instance.OnAttack;
                 @attack.canceled += instance.OnAttack;
+                @dash.started += instance.OnDash;
+                @dash.performed += instance.OnDash;
+                @dash.canceled += instance.OnDash;
             }
 
             private void UnregisterCallbacks(IMainActions instance)
@@ -340,6 +399,9 @@ namespace SmallGame.Controls
                 @attack.started -= instance.OnAttack;
                 @attack.performed -= instance.OnAttack;
                 @attack.canceled -= instance.OnAttack;
+                @dash.started -= instance.OnDash;
+                @dash.performed -= instance.OnDash;
+                @dash.canceled -= instance.OnDash;
             }
 
             public void RemoveCallbacks(IMainActions instance)
@@ -362,6 +424,7 @@ namespace SmallGame.Controls
             void OnMovement(InputAction.CallbackContext context);
             void OnJump(InputAction.CallbackContext context);
             void OnAttack(InputAction.CallbackContext context);
+            void OnDash(InputAction.CallbackContext context);
         }
     }
 }

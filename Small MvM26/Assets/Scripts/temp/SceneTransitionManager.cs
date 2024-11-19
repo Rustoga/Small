@@ -6,10 +6,9 @@ namespace SmallGame
 {
     public class SceneTransitionManager : MonoBehaviour
     {
-        [SerializeField] SceneAsset testWorld;
         public void StartGame()
         {
-            SceneManager.LoadScene(testWorld.name);
+            SceneManager.LoadScene(1);
         }
     }
 }

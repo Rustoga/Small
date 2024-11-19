@@ -1,5 +1,4 @@
 using System;
-using SmallGame.Controls;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -31,9 +30,10 @@ namespace SmallGame.Input
         GameplayControls _playerInput;
         GameplayControls.MainActions _controls;
 
-        public UnityEvent<Vector2> onMovement = new();
-        public UnityEvent<float> onJump = new();
-        public UnityEvent<float> onAttack = new();
+        public UnityEvent<Vector2> OnMovement = new();
+        public UnityEvent<float> OnJump = new();
+        public UnityEvent<float> OnAttack = new();
+        public UnityEvent<float> OnDash = new();
 
         void Awake()
         {
@@ -62,6 +62,9 @@ namespace SmallGame.Input
             _controls.jump.canceled += UpdateJump;
             _controls.attack.performed += UpdateAttack;
             _controls.attack.canceled += UpdateAttack;
+            
+            _controls.dash.performed += UpdateDash;
+        
 
         }
 
@@ -77,24 +80,30 @@ namespace SmallGame.Input
             _controls.attack.performed += UpdateAttack;
             _controls.attack.canceled += UpdateAttack;
 
+            _controls.dash.performed += UpdateDash;
         }
 
         void UpdateMovement(InputAction.CallbackContext c)
         {
             var direction = c.ReadValue<Vector2>();
-            onMovement.Invoke(direction);
+            OnMovement.Invoke(direction);
         }
 
         void UpdateJump(InputAction.CallbackContext c)
         {
 
             var pressed = c.ReadValue<float>();
-            onJump.Invoke(pressed);
+            OnJump.Invoke(pressed);
         }
         void UpdateAttack(InputAction.CallbackContext c)
         {
             var pressed = c.ReadValue<float>();
-            onAttack.Invoke(pressed);
+            OnAttack.Invoke(pressed);
+        }
+        private void UpdateDash(InputAction.CallbackContext c)
+        {
+            var pressed = c.ReadValue<float>();
+            OnDash.Invoke(pressed);
         }
 
 

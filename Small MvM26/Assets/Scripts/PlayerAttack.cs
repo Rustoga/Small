@@ -12,12 +12,12 @@ namespace SmallGame
         void Start()
         {
             _input = InputHandler.Instance;
-            _input.onAttack.AddListener(UpdateAttack);
+            _input.OnAttack.AddListener(UpdateAttack);
         }
 
         void OnDestroy()
         {
-            _input.onAttack.RemoveListener(UpdateAttack);
+            _input.OnAttack.RemoveListener(UpdateAttack);
         }
 
         private void UpdateAttack(float pressed)

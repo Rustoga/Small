@@ -295,9 +295,9 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.124582864
+    x: 0.12415654
     y: 0
-    width: 0.7504635
+    width: 0.75033736
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -395,13 +395,44 @@ MonoBehaviour:
   m_RefResolutionX: 320
   m_RefResolutionY: 240
   m_CropFrame: 4
-  m_GridSnapping: 2
-  m_FilterMode: 0
+  m_GridSnapping: 1
+  m_FilterMode: 1
   m_UpscaleRT: 0
   m_PixelSnapping: 0
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!1 &442543681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 442543682}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &442543682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442543681}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1720641925}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &831230281
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,7 +444,7 @@ GameObject:
   - component: {fileID: 831230282}
   - component: {fileID: 831230283}
   - component: {fileID: 831230284}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,9 +664,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1720641925}
   - component: {fileID: 1720641929}
+  - component: {fileID: 1720641926}
   - component: {fileID: 1720641928}
   - component: {fileID: 1720641927}
-  - component: {fileID: 1720641926}
   - component: {fileID: 1720641930}
   m_Layer: 0
   m_Name: Player
@@ -659,6 +690,7 @@ Transform:
   m_Children:
   - {fileID: 329441816}
   - {fileID: 1996836437}
+  - {fileID: 442543682}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1720641926
@@ -695,7 +727,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0031924248, y: 0.8371872}
+  m_Offset: {x: 0.0031924248, y: 0.8436973}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -705,7 +737,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.2426214, y: 1.7007477}
+  m_Size: {x: 1.2426214, y: 1.6877275}
   m_EdgeRadius: 0
 --- !u!114 &1720641927
 MonoBehaviour:
@@ -719,7 +751,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de1f1b9831b2c2d4db607253ea51c4a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RunSpeed: 2
+  RunSpeed: 20
+  _groundCheckHelper: {fileID: 442543682}
+  _groundLayers:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &1720641928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -733,6 +769,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movementSmoothing: 0.03
+  _velocity: {x: 0, y: 0, z: 0}
+  _dashForce: 4
+  _jumpForce: {x: 0, y: 100}
 --- !u!50 &1720641929
 Rigidbody2D:
   serializedVersion: 5

@@ -34,7 +34,7 @@ namespace SmallGame
         void Start()
         {
             _input = InputHandler.Instance;
-            _input.onMovement.AddListener(HilightDirection);
+            _input.OnMovement.AddListener(HilightDirection);
 
             Array.ForEach(directions, dir => TurnOff(dir));
     

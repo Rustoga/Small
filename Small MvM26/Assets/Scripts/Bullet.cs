@@ -7,7 +7,7 @@ namespace SmallGame
     [RequireComponent(typeof(Rigidbody2D))]
     public class Bullet : MonoBehaviour
     {
-        [SerializeField]float _speed = 10f;
+        [SerializeField] float _speed = 10f;
         Rigidbody2D _rb;
         float _lifeDuration = 5f;
         CancellationTokenSource _cts;
@@ -25,12 +25,20 @@ namespace SmallGame
         }
         async void StartLifeDurationCountdown(CancellationToken token)
         {
-            await Task.Delay((int)(_lifeDuration * 1000), token);
-
-            if (!token.IsCancellationRequested)
+            try
             {
-                Destroy(gameObject);
+                await Task.Delay((int)(_lifeDuration * 1000), token);
+
+                if (!token.IsCancellationRequested)
+                {
+                    Destroy(gameObject);
+                }
             }
+            catch (TaskCanceledException)
+            {
+                
+            }
+
 
 
         }
