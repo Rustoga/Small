@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/TestWorld.unity
+    path: Assets/Scenes/480x270 test.unity
+    guid: c890fd4ca889b1c4db51f8972c621f7a
+  - enabled: 0
+    path: Assets/Scenes/320x240 test.unity
     guid: f0c5e01947ce6834fb38d722aa33ad16
   m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 4ca9a20ffb4c79f4a921419ceaaa1c63, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: dca60168d4b620d41a117f16589878e2, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

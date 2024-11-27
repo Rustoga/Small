@@ -9,45 +9,53 @@ namespace SmallGame
     {
         [SerializeField] float _speed = 10f;
         Rigidbody2D _rb;
-        float _lifeDuration = 5f;
-        CancellationTokenSource _cts;
-
+        [SerializeField] float _lifeDuration = 2f;
+        Vector2 _direction;
+        bool _isEnabled;
+        // LayerMask _ignoreLayers;
+        [SerializeField] LayerMask _collisionLayers;
+        float _damageAmount = 2f;
         void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
-            _cts = new CancellationTokenSource();
-            StartLifeDurationCountdown(_cts.Token);
+            // gameObject.SetActive(false);
         }
 
         public void EnableBullet(Vector2 direction)
         {
-            _rb.AddForce(direction * _speed, ForceMode2D.Impulse);
+            _direction = direction;
+            gameObject.SetActive(true);
+            _isEnabled = true;
+            _rb.linearVelocity = Vector2.zero;
         }
-        async void StartLifeDurationCountdown(CancellationToken token)
-        {
-            try
-            {
-                await Task.Delay((int)(_lifeDuration * 1000), token);
 
-                if (!token.IsCancellationRequested)
-                {
-                    Destroy(gameObject);
-                }
+        void FixedUpdate()
+        {
+            if (!_isEnabled) return;
+
+            _rb.linearVelocity = _direction * _speed;
+            _lifeDuration -= Time.deltaTime;
+
+            if (_lifeDuration <= 0)
+            {
+                Destroy(gameObject);
             }
-            catch (TaskCanceledException)
+        }
+
+
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            if (_collisionLayers == (_collisionLayers | (1 << other.gameObject.layer)))
             {
                 
+                if (other.gameObject.TryGetComponent(out IDamageable damageable))
+                {
+                    damageable.ApplyDamage(_damageAmount, transform);
+                }
+
+                Destroy(gameObject);
             }
-
-
-
         }
-
-        void OnDestroy()
-        {
-            _cts.Cancel();
-        }
-
 
     }
 }

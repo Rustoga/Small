@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 63e283e6a0c98824bbc0dc0c9eb98a64
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -318517104415069768
+    second: Sky-Trees_0
+  - first:
+      213: 2909341339548010095
+    second: Sky-Trees_1
+  - first:
+      213: -816999682560866887
+    second: Sky-Trees_2
+  - first:
+      213: -3620914911424374884
+    second: Sky-Trees_3
+  - first:
+      213: -7649827498007054084
+    second: Sky-Trees_4
+  - first:
+      213: -2228162940881258949
+    second: Sky-Trees_5
+  - first:
+      213: 233733230150059115
+    second: Sky-Trees_6
+  - first:
+      213: -5621841866155190087
+    second: Sky-Trees_7
+  - first:
+      213: 201422314883003432
+    second: Sky-Trees_8
+  - first:
+      213: -5613512876165082875
+    second: Sky-Trees_9
+  - first:
+      213: 1448852387224350251
+    second: Sky-Trees_10
+  - first:
+      213: 5716879127511533254
+    second: Sky-Trees_11
+  - first:
+      213: 8717409204761315641
+    second: Sky-Trees_12
+  - first:
+      213: -343275601703014673
+    second: Sky-Trees_13
+  - first:
+      213: -3596695273707910517
+    second: Sky-Trees_14
+  - first:
+      213: 1873530089725560746
+    second: Sky-Trees_15
+  - first:
+      213: 5506388609359420492
+    second: Sky-Trees_16
+  - first:
+      213: -7699631434233639061
+    second: Sky-Trees_17
+  - first:
+      213: 6668962488170921103
+    second: Sky-Trees_18
+  - first:
+      213: 6174971893291212672
+    second: Sky-Trees_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sky-Trees_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 77
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b924709166649bf0800000000000000
+      internalID: -318517104415069768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 64
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f664e12b88e006820800000000000000
+      internalID: 2909341339548010095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b54a5b0e1f69a4f0800000000000000
+      internalID: -816999682560866887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 0
+        width: 62
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9792ae821defbdc0800000000000000
+      internalID: -3620914911424374884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_4
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 0
+        width: 43
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf8364ccb6a56d590800000000000000
+      internalID: -7649827498007054084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_5
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36351f4c99f311e0800000000000000
+      internalID: -2228162940881258949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 51
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b648c4b62236e3300800000000000000
+      internalID: 233733230150059115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_7
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b89668cb943bf1b0800000000000000
+      internalID: -5621841866155190087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824307837889bc200800000000000000
+      internalID: 201422314883003432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_9
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 0
+        width: 19
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5015912e7cbc812b0800000000000000
+      internalID: -5613512876165082875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_10
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 46
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2eeb70e19b5b1410800000000000000
+      internalID: 1448852387224350251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_11
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 32
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c68b23f64f665f40800000000000000
+      internalID: 5716879127511533254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_12
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 8
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939c4832c757af870800000000000000
+      internalID: 8717409204761315641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_13
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 25
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feeee64b8a07c3bf0800000000000000
+      internalID: -343275601703014673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_14
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 27
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a405564b8f51ec0800000000000000
+      internalID: -3596695273707910517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_15
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 19
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa70912b0bd100a10800000000000000
+      internalID: 1873530089725560746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_16
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 0
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c1020244f9a6c40800000000000000
+      internalID: 5506388609359420492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_17
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 18
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f8215410a652590800000000000000
+      internalID: -7699631434233639061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_18
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c35df9c0aec8c50800000000000000
+      internalID: 6668962488170921103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Trees_19
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08fd4a57838e1b550800000000000000
+      internalID: 6174971893291212672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sky-Trees_0: -318517104415069768
+      Sky-Trees_1: 2909341339548010095
+      Sky-Trees_10: 1448852387224350251
+      Sky-Trees_11: 5716879127511533254
+      Sky-Trees_12: 8717409204761315641
+      Sky-Trees_13: -343275601703014673
+      Sky-Trees_14: -3596695273707910517
+      Sky-Trees_15: 1873530089725560746
+      Sky-Trees_16: 5506388609359420492
+      Sky-Trees_17: -7699631434233639061
+      Sky-Trees_18: 6668962488170921103
+      Sky-Trees_19: 6174971893291212672
+      Sky-Trees_2: -816999682560866887
+      Sky-Trees_3: -3620914911424374884
+      Sky-Trees_4: -7649827498007054084
+      Sky-Trees_5: -2228162940881258949
+      Sky-Trees_6: 233733230150059115
+      Sky-Trees_7: -5621841866155190087
+      Sky-Trees_8: 201422314883003432
+      Sky-Trees_9: -5613512876165082875
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

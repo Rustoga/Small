@@ -64,6 +64,15 @@ namespace SmallGame.Input
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""takeScreenShot"",
+                    ""type"": ""Button"",
+                    ""id"": ""00646e40-00b4-4b85-a199-26008a97b23a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -275,6 +284,17 @@ namespace SmallGame.Input
                     ""action"": ""dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""100c1e58-1787-4add-a73b-edcb89b1aebe"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""takeScreenShot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -287,6 +307,7 @@ namespace SmallGame.Input
             m_main_jump = m_main.FindAction("jump", throwIfNotFound: true);
             m_main_attack = m_main.FindAction("attack", throwIfNotFound: true);
             m_main_dash = m_main.FindAction("dash", throwIfNotFound: true);
+            m_main_takeScreenShot = m_main.FindAction("takeScreenShot", throwIfNotFound: true);
         }
 
         ~@GameplayControls()
@@ -357,6 +378,7 @@ namespace SmallGame.Input
         private readonly InputAction m_main_jump;
         private readonly InputAction m_main_attack;
         private readonly InputAction m_main_dash;
+        private readonly InputAction m_main_takeScreenShot;
         public struct MainActions
         {
             private @GameplayControls m_Wrapper;
@@ -365,6 +387,7 @@ namespace SmallGame.Input
             public InputAction @jump => m_Wrapper.m_main_jump;
             public InputAction @attack => m_Wrapper.m_main_attack;
             public InputAction @dash => m_Wrapper.m_main_dash;
+            public InputAction @takeScreenShot => m_Wrapper.m_main_takeScreenShot;
             public InputActionMap Get() { return m_Wrapper.m_main; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -386,6 +409,9 @@ namespace SmallGame.Input
                 @dash.started += instance.OnDash;
                 @dash.performed += instance.OnDash;
                 @dash.canceled += instance.OnDash;
+                @takeScreenShot.started += instance.OnTakeScreenShot;
+                @takeScreenShot.performed += instance.OnTakeScreenShot;
+                @takeScreenShot.canceled += instance.OnTakeScreenShot;
             }
 
             private void UnregisterCallbacks(IMainActions instance)
@@ -402,6 +428,9 @@ namespace SmallGame.Input
                 @dash.started -= instance.OnDash;
                 @dash.performed -= instance.OnDash;
                 @dash.canceled -= instance.OnDash;
+                @takeScreenShot.started -= instance.OnTakeScreenShot;
+                @takeScreenShot.performed -= instance.OnTakeScreenShot;
+                @takeScreenShot.canceled -= instance.OnTakeScreenShot;
             }
 
             public void RemoveCallbacks(IMainActions instance)
@@ -425,6 +454,7 @@ namespace SmallGame.Input
             void OnJump(InputAction.CallbackContext context);
             void OnAttack(InputAction.CallbackContext context);
             void OnDash(InputAction.CallbackContext context);
+            void OnTakeScreenShot(InputAction.CallbackContext context);
         }
     }
 }

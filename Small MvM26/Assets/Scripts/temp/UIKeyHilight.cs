@@ -1,6 +1,7 @@
 using System;
 using SmallGame.Input;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 
@@ -23,7 +24,7 @@ namespace SmallGame
         [SerializeField] float _inactiveAlpha = 0.75f;
         [SerializeField]float _activeGrow = 1.15f;
         InputHandler _input;
-
+        float _deadZoneMin => InputSystem.settings.defaultDeadzoneMin;
         [SerializeField] GameObject _upArrow, _downArrow, _leftArrow, _rightArrow;
         GameObject[] directions;
         void Awake()
@@ -42,10 +43,10 @@ namespace SmallGame
 
         void HilightDirection(Vector2 direction)
         {
-            HighlightButton(direction.y > 0, _upArrow);
-            HighlightButton(direction.y < 0, _downArrow);
-            HighlightButton(direction.x > 0, _rightArrow);
-            HighlightButton(direction.x < 0, _leftArrow);
+            HighlightButton(direction.y > _deadZoneMin, _upArrow);
+            HighlightButton(direction.y < -_deadZoneMin, _downArrow);
+            HighlightButton(direction.x > _deadZoneMin, _rightArrow);
+            HighlightButton(direction.x < -_deadZoneMin, _leftArrow);
         }
 
         void HighlightButton(bool selected, GameObject uiButton)

@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: ca7afbbba4e1912499ae148bbc4bb3d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5879400817751347494
+    second: Sky-Mountains_0
+  - first:
+      213: 6445636312691777025
+    second: Sky-Mountains_1
+  - first:
+      213: -3212669441703306761
+    second: Sky-Mountains_2
+  - first:
+      213: -8668594467198927925
+    second: Sky-Mountains_3
+  - first:
+      213: 6436970397080305125
+    second: Sky-Mountains_4
+  - first:
+      213: -3836804563848698877
+    second: Sky-Mountains_5
+  - first:
+      213: 6467491600567417992
+    second: Sky-Mountains_6
+  - first:
+      213: -5164137998998244610
+    second: Sky-Mountains_7
+  - first:
+      213: -1582536089955258167
+    second: Sky-Mountains_8
+  - first:
+      213: 2131867519277022697
+    second: Sky-Mountains_9
+  - first:
+      213: 4479256055415654550
+    second: Sky-Mountains_10
+  - first:
+      213: -8841978968888352902
+    second: Sky-Mountains_11
+  - first:
+      213: -3664419015486771205
+    second: Sky-Mountains_12
+  - first:
+      213: -7540264161797563351
+    second: Sky-Mountains_13
+  - first:
+      213: -3847928034648856160
+    second: Sky-Mountains_14
+  - first:
+      213: -8526582564523894231
+    second: Sky-Mountains_15
+  - first:
+      213: -5212201746791419989
+    second: Sky-Mountains_16
+  - first:
+      213: 7973412853414239877
+    second: Sky-Mountains_17
+  - first:
+      213: 2499971597362831845
+    second: Sky-Mountains_18
+  - first:
+      213: -7045913851930278942
+    second: Sky-Mountains_19
+  - first:
+      213: 5457790489995861806
+    second: Sky-Mountains_20
+  - first:
+      213: 4672910572904815114
+    second: Sky-Mountains_21
+  - first:
+      213: 907431121165950418
+    second: Sky-Mountains_22
+  - first:
+      213: -2400764005932626543
+    second: Sky-Mountains_23
+  - first:
+      213: 2435292990493932668
+    second: Sky-Mountains_24
+  - first:
+      213: 2218008423133821333
+    second: Sky-Mountains_25
+  - first:
+      213: -7224386882463189233
+    second: Sky-Mountains_26
+  - first:
+      213: -2380804536775485064
+    second: Sky-Mountains_27
+  - first:
+      213: 5217361405175825233
+    second: Sky-Mountains_28
+  - first:
+      213: -7975209493405168431
+    second: Sky-Mountains_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sky-Mountains_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 186
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621d532b4e3d79150800000000000000
+      internalID: 5879400817751347494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 199
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e1a517310837950800000000000000
+      internalID: 6445636312691777025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 189
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9958a0a2e4a63d0800000000000000
+      internalID: -3212669441703306761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcbf0b0a247f2b780800000000000000
+      internalID: -8668594467198927925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_4
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 54
+        width: 131
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed3dabb876b45950800000000000000
+      internalID: 6436970397080305125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 65
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3046333d39ee0cac0800000000000000
+      internalID: -3836804563848698877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_6
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 66
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cb4af285521c950800000000000000
+      internalID: 6467491600567417992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_7
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 62
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2fc96c9db4558b0800000000000000
+      internalID: -5164137998998244610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_8
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 63
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c03bf19fc3b90ae0800000000000000
+      internalID: -1582536089955258167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_9
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 69
+        width: 89
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed33b2b63ae59d10800000000000000
+      internalID: 2131867519277022697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_10
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 59
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698411976a3892e30800000000000000
+      internalID: 4479256055415654550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_11
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 65
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f5fef79fafa4580800000000000000
+      internalID: -8841978968888352902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_12
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 60
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff69b1025e552dc0800000000000000
+      internalID: -3664419015486771205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_13
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 46
+        width: 108
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c9273e1b99b5790800000000000000
+      internalID: -7540264161797563351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_14
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9ec75f6d9699ac0800000000000000
+      internalID: -3847928034648856160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_15
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 52
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a9385555e7ba980800000000000000
+      internalID: -8526582564523894231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_16
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 53
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafa3d0702a8aa7b0800000000000000
+      internalID: -5212201746791419989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_17
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 59
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e1a47ceb047ae60800000000000000
+      internalID: 7973412853414239877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_18
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 38
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e1a0612ceea1b220800000000000000
+      internalID: 2499971597362831845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_19
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 58
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e301b9bea2e73e90800000000000000
+      internalID: -7045913851930278942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_20
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 41
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f55b6b887fdbb40800000000000000
+      internalID: 5457790489995861806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_21
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 54
+        width: 31
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a982d686389d040800000000000000
+      internalID: 4672910572904815114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_22
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 58
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd1b330cc7d79c00800000000000000
+      internalID: 907431121165950418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_23
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 40
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d87dc3bd5ceaed0800000000000000
+      internalID: -2400764005932626543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_24
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 10
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7cb3667216ebc120800000000000000
+      internalID: 2435292990493932668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_25
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 12
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59937b9c8e2f7ce10800000000000000
+      internalID: 2218008423133821333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_26
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 8
+        width: 35
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f073ac62862ddbb90800000000000000
+      internalID: -7224386882463189233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_27
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 53
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879dbd943eea5fed0800000000000000
+      internalID: -2380804536775485064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_28
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 14
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15386542e8ac76840800000000000000
+      internalID: 5217361405175825233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky-Mountains_29
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 9
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc0340683d525190800000000000000
+      internalID: -7975209493405168431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sky-Mountains_0: 5879400817751347494
+      Sky-Mountains_1: 6445636312691777025
+      Sky-Mountains_10: 4479256055415654550
+      Sky-Mountains_11: -8841978968888352902
+      Sky-Mountains_12: -3664419015486771205
+      Sky-Mountains_13: -7540264161797563351
+      Sky-Mountains_14: -3847928034648856160
+      Sky-Mountains_15: -8526582564523894231
+      Sky-Mountains_16: -5212201746791419989
+      Sky-Mountains_17: 7973412853414239877
+      Sky-Mountains_18: 2499971597362831845
+      Sky-Mountains_19: -7045913851930278942
+      Sky-Mountains_2: -3212669441703306761
+      Sky-Mountains_20: 5457790489995861806
+      Sky-Mountains_21: 4672910572904815114
+      Sky-Mountains_22: 907431121165950418
+      Sky-Mountains_23: -2400764005932626543
+      Sky-Mountains_24: 2435292990493932668
+      Sky-Mountains_25: 2218008423133821333
+      Sky-Mountains_26: -7224386882463189233
+      Sky-Mountains_27: -2380804536775485064
+      Sky-Mountains_28: 5217361405175825233
+      Sky-Mountains_29: -7975209493405168431
+      Sky-Mountains_3: -8668594467198927925
+      Sky-Mountains_4: 6436970397080305125
+      Sky-Mountains_5: -3836804563848698877
+      Sky-Mountains_6: 6467491600567417992
+      Sky-Mountains_7: -5164137998998244610
+      Sky-Mountains_8: -1582536089955258167
+      Sky-Mountains_9: 2131867519277022697
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

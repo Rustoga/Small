@@ -8,6 +8,7 @@ namespace SmallGame.Input
     public class InputHandler : MonoBehaviour
     {
         static InputHandler _instance;
+        float _deadZoneMin => InputSystem.settings.defaultDeadzoneMin;
 
         public static InputHandler Instance
         {
@@ -31,9 +32,10 @@ namespace SmallGame.Input
         GameplayControls.MainActions _controls;
 
         public UnityEvent<Vector2> OnMovement = new();
-        public UnityEvent<float> OnJump = new();
-        public UnityEvent<float> OnAttack = new();
-        public UnityEvent<float> OnDash = new();
+        public UnityEvent OnAttackStart = new();
+        public UnityEvent OnDashStart = new();
+        public UnityEvent OnJumpStart = new();
+        public UnityEvent OnScreenShot = new();
 
         void Awake()
         {
@@ -58,16 +60,13 @@ namespace SmallGame.Input
 
             _controls.movement.performed += UpdateMovement;
             _controls.movement.canceled += UpdateMovement;
-            _controls.jump.performed += UpdateJump;
-            _controls.jump.canceled += UpdateJump;
-            _controls.attack.performed += UpdateAttack;
-            _controls.attack.canceled += UpdateAttack;
-            
-            _controls.dash.performed += UpdateDash;
-        
+            _controls.attack.started += AttackStarted;
+            _controls.dash.started += DashStarted;
+            _controls.jump.started += JumpStarted;
+
+            _controls.takeScreenShot.started += TakeScreenShot;
 
         }
-
 
         void OnDisable()
         {
@@ -75,37 +74,35 @@ namespace SmallGame.Input
 
             _controls.movement.performed -= UpdateMovement;
             _controls.movement.canceled -= UpdateMovement;
-            _controls.jump.performed -= UpdateJump;
-            _controls.jump.canceled -= UpdateJump;
-            _controls.attack.performed += UpdateAttack;
-            _controls.attack.canceled += UpdateAttack;
+            _controls.attack.started -= AttackStarted;
+            _controls.dash.started -= DashStarted;
+            _controls.jump.started -= JumpStarted;
 
-            _controls.dash.performed += UpdateDash;
+            _controls.takeScreenShot.started -= TakeScreenShot;
+
+        }
+        void OnDestroy() {
+            OnMovement.RemoveAllListeners();
+            OnAttackStart.RemoveAllListeners();
+            OnDashStart.RemoveAllListeners();
+            OnJumpStart.RemoveAllListeners();
+            OnScreenShot.RemoveAllListeners();
         }
 
         void UpdateMovement(InputAction.CallbackContext c)
         {
             var direction = c.ReadValue<Vector2>();
+            
+            if(Mathf.Abs(direction.x) < _deadZoneMin) direction.x = 0;
+            if(Mathf.Abs(direction.y) < _deadZoneMin) direction.y = 0;
+
             OnMovement.Invoke(direction);
         }
-
-        void UpdateJump(InputAction.CallbackContext c)
-        {
-
-            var pressed = c.ReadValue<float>();
-            OnJump.Invoke(pressed);
-        }
-        void UpdateAttack(InputAction.CallbackContext c)
-        {
-            var pressed = c.ReadValue<float>();
-            OnAttack.Invoke(pressed);
-        }
-        private void UpdateDash(InputAction.CallbackContext c)
-        {
-            var pressed = c.ReadValue<float>();
-            OnDash.Invoke(pressed);
-        }
-
+        
+        void AttackStarted(InputAction.CallbackContext c) => OnAttackStart.Invoke();
+        void DashStarted(InputAction.CallbackContext c) => OnDashStart.Invoke();
+        void JumpStarted(InputAction.CallbackContext c) => OnJumpStart.Invoke();
+        void TakeScreenShot(InputAction.CallbackContext c) => OnScreenShot.Invoke();
 
 
     }
