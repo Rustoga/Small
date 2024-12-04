@@ -135,7 +135,7 @@ Transform:
   m_GameObject: {fileID: 2342574794632459884}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.175, y: 0, z: 0}
+  m_LocalPosition: {x: 0.35, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -199,7 +199,7 @@ Transform:
   m_GameObject: {fileID: 4146436638451903461}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -395,7 +395,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0, b: 0.67560244, a: 1}
+      maxColor: {r: 0.23529412, g: 0.21960784, b: 0.2, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5088,7 +5088,7 @@ Transform:
   m_GameObject: {fileID: 5362012752495610746}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5317,7 +5317,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0, b: 0.67560244, a: 1}
+      maxColor: {r: 0.23529412, g: 0.21960784, b: 0.2, a: 0.1764706}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -10032,8 +10032,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.009594917, y: 0.49040496}
-  m_Size: {x: 0.40405083, y: 1}
+  m_Offset: {x: 0.009594917, y: 0.43678015}
+  m_Size: {x: 0.8081016, y: 1.8927504}
   m_Direction: 0
 --- !u!114 &1657276566963330036
 MonoBehaviour:
@@ -10051,8 +10051,8 @@ MonoBehaviour:
   invincible: 0
   particleJumpUp: {fileID: 8327956063260013744}
   particleJumpDown: {fileID: 8986474717433142100}
-  _runSpeed: 5.5
-  _JumpForce: 750
+  _runSpeed: 9
+  _JumpForce: 950
   _coyoteTime: 0.1
   _coyoteTimer: 0
   _jumpCooldown: 0.14
@@ -10076,7 +10076,7 @@ MonoBehaviour:
   _slidingFallSpeed: 3
   _normalFallSpeedLimit: 25
   _currentFallSpeedLimit: 0
-  _DashForce: 17
+  _DashForce: 27
   DashDuration: 0.1
   DashRecovery: 0.5
   _grounded: 0
@@ -10102,7 +10102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3d9133d6bfbcac478b655428e0068c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 3642908347140082187}
   AnimationVariables:
     Speed: 0
     IsJumping: 0
@@ -10113,6 +10112,8 @@ MonoBehaviour:
     JumpUp: 0
     IsDoubleJumping: 0
     IsDead: 0
+    IsLanding: 0
+  _animator: {fileID: 3642908347140082187}
 --- !u!114 &8561640752065223538
 MonoBehaviour:
   m_ObjectHideFlags: 0
