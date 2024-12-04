@@ -6,6 +6,8 @@ using SmallGame.Input;
 using System.Collections.Generic;
 using SmallGame.Physics;
 
+//after a wall jump set a new variable bool and vector2 turn on when wall jumping turn off when input recieved is the opposite direction
+
 namespace SmallGame.Player
 {
     enum FacingDirection
@@ -256,6 +258,7 @@ namespace SmallGame.Player
                     _coyoteTimer = _coyoteTime;
                     if (!wasGrounded)
                     {
+                        _wallMovementOverride = false;
                         HandleLanding();
                         PlayLandingEffects();
 
@@ -383,14 +386,20 @@ namespace SmallGame.Player
                 _rb.linearVelocity = new Vector2(transform.localScale.x * _DashForce, 0);
             }
         }
-
+        bool _wallMovementOverride;
         void HandleMovement(float move)
         {
             if (!_movementUnlocked) return;
 
             if (_grounded || _airControl)
             {
-                Vector3 targetVelocity = new Vector2(move * _runSpeed, _rb.linearVelocity.y);
+                Vector2 targetVelocity = new Vector2(move * _runSpeed, _rb.linearVelocity.y);
+
+                if (_wallMovementOverride)
+                {
+                    targetVelocity = HandleWallJumpMovement(move, targetVelocity);
+                }
+
                 _rb.linearVelocity = Vector3.SmoothDamp(_rb.linearVelocity, targetVelocity, ref _velocity, _movementSmoothing);
                 _animationSystem.AnimationVariables.Speed = Mathf.Abs(move);
 
@@ -400,6 +409,45 @@ namespace SmallGame.Player
                 }
             }
         }
+
+        Vector2 HandleWallJumpMovement(float move, Vector2 targetVelocity)
+        {
+            if (_lastWallJumpDirection == FacingDirection.Left)
+            {
+                return HandleLeftWallJump(move, targetVelocity);
+            }
+            else if (_lastWallJumpDirection == FacingDirection.Right)
+            {
+                return HandleRightWallJump(move, targetVelocity);
+            }
+            return targetVelocity;
+        }
+
+        Vector2 HandleLeftWallJump(float move, Vector2 targetVelocity)
+        {
+            if (move > 0)
+            {
+                _wallMovementOverride = false;
+            }
+            else
+            {
+                targetVelocity = new Vector2(-1 * _runSpeed, _rb.linearVelocityY);
+            }
+            return targetVelocity;
+        }
+        Vector2 HandleRightWallJump(float move, Vector2 targetVelocity)
+        {
+            if (move < 0)
+            {
+                _wallMovementOverride = false;
+            }
+            else
+            {
+                targetVelocity = new Vector2(1 * _runSpeed, _rb.linearVelocityY);
+            }
+            return targetVelocity;
+        }
+
 
         bool _canJump = true;
         void HandleJump(bool jump)
@@ -494,6 +542,7 @@ namespace SmallGame.Player
                 _animationSystem.AnimationVariables.IsJumping = false;
                 _animationSystem.AnimationVariables.IsDashing = false;
                 FaceWallSlidingDirection();
+                _wallMovementOverride = false;
             }
         }
 
@@ -516,6 +565,7 @@ namespace SmallGame.Player
             _animationSystem.AnimationVariables.JumpUp = true;
 
             _lastWallJumpDirection = _wallDirection;
+            _wallMovementOverride = true;
         }
 
 
@@ -583,7 +633,7 @@ namespace SmallGame.Player
             _animationSystem.AnimationVariables.IsJumping = false;
             _animationSystem.AnimationVariables.IsDoubleJumping = false;
             _animationSystem.AnimationVariables.IsLanding = true;
-        
+
         }
         void HandleFalling()
         {
